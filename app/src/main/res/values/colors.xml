@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/main_color</color>
+    <color name="colorPrimaryDark">@color/main_color</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorLoginHead">#676868</color>
+
+    <color name="colorLoginBg">#F4F5F5</color>
+
+    <color name="colorLineBg">#F4F4F4</color>
+
+    <color name="colorLoginBtnBg">#FE7875</color>
+
+    <color name="colorWx">#E1E2E2</color>
+
+    <color name="colorPositionBg">#F7F7F9</color>
+
+    <color name="colorPositionStatus">#141414</color>
+
+    <color name="colorFilterBtnBg">#EFF0F2</color>
+
+    <color name="colorFlowTab">#F0F0F2</color>
+
+    <color name="colorAddress">#808080</color>
+
+    <color name="colorMessageTime">#929292</color>
+
+</resources>

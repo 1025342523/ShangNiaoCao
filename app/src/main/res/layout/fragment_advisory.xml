@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLoginBg"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.ToolbarPopupOverlay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="咨询"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_18"
+            />
+
+    </android.support.v7.widget.Toolbar>
+    <!--tl_tab_space_equal  160-->
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80"
+        android:layout_marginEnd="@dimen/size_40"
+        android:layout_marginStart="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_40"
+        android:background="@drawable/shape_sliding_tab_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:tl_indicator_color="@color/main_color"
+        app:tl_indicator_corner_radius="@dimen/size_2"
+        app:tl_indicator_height="@dimen/size_6"
+        app:tl_indicator_width="@dimen/size_130"
+        app:tl_tab_space_equal="true"
+        app:tl_textAllCaps="false"
+        app:tl_textBold="NONE"
+        app:tl_textSelectColor="@color/main_color"
+        app:tl_textUnselectColor="@android:color/black"
+        app:tl_textsize="@dimen/font_16"
+        />
+
+    <com.yscoco.uppernest.commonlibrary.widget.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

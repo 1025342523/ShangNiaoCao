@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_40"
+        android:scrollbars="none"
+        >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_40"
+            android:layout_marginStart="@dimen/size_40"
+            android:paddingBottom="@dimen/size_360"
+            >
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/shape_sliding_tab_bg"
+                android:padding="@dimen/size_30"
+                android:text="心理咨询热线电话: 0755-28269055"
+                android:textColor="@color/colorBlack"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_40"
+                android:background="@drawable/shape_sliding_tab_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/size_50"
+                app:layout_constraintTop_toBottomOf="@id/tv_phone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_14"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_red_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/font_14"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_content_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/font_14"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/size_20"
+                    android:src="@mipmap/icon_login_head"
+                    />
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

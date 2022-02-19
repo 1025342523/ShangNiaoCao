@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_40"
+    android:background="@drawable/shape_position_rv_item_bg"
+    >
+
+    <TextView
+        android:id="@+id/tv_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="发型师"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_10"
+        android:text="4-6K"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_claim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position"
+        app:layout_constraintTop_toBottomOf="@id/tv_position"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/icon_positioning"
+            />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳市"
+            android:textColor="@color/colorAddress"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginStart="@dimen/size_20"
+            android:src="@mipmap/icon_experience"
+            />
+
+        <TextView
+            android:id="@+id/tv_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_6"
+            android:text="1-3年"
+            android:textColor="@color/colorAddress"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:layout_marginStart="@dimen/size_20"
+            android:src="@mipmap/icon_education"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_6"
+            android:text="高中"
+            android:textColor="@color/colorAddress"
+            />
+
+    </LinearLayout>
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/tfl_welfare"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:padding="@dimen/size_40"
+        app:layout_constraintTop_toBottomOf="@id/ll_claim"
+        app:max_select="1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_20"
+        app:layout_constraintLeft_toLeftOf="@id/tv_position"
+        app:layout_constraintTop_toBottomOf="@id/tfl_welfare"
+
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/size_40"
+            android:layout_height="@dimen/size_40"
+            android:src="@mipmap/icon_logo"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_20"
+            android:text="深圳上哪儿淘淘科技有限公司"
+            android:textColor="@color/colorAddress"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

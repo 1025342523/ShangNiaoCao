@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">ShangNiaoCao</string>
+
+    <string-array name="tab_array">
+        <item>职位</item>
+        <item>咨询</item>
+        <item>消息</item>
+        <item>圈子</item>
+        <item>我的</item>
+    </string-array>
+
+    <string-array name="monthly_salary_array">
+        <item>不限</item>
+        <item>2-3k</item>
+        <item>3-4k</item>
+        <item>4-6k</item>
+        <item>6-8k</item>
+        <item>8-10k</item>
+        <item>10以上</item>
+    </string-array>
+
+    <string-array name="experience_array">
+        <item>不限</item>
+        <item>应届生</item>
+        <item>一年以内</item>
+        <item>1-3年</item>
+        <item>3-5年</item>
+        <item>5-10年</item>
+        <item>10年以上</item>
+    </string-array>
+
+    <string-array name="education_array">
+        <item>不限</item>
+        <item>初中</item>
+        <item>高中</item>
+        <item>大专</item>
+        <item>本科</item>
+        <item>硕士</item>
+        <item>博士</item>
+    </string-array>
+
+    <string-array name="advisory_tab_array">
+        <item>法律咨询</item>
+        <item>心理咨询</item>
+    </string-array>
+
+</resources>

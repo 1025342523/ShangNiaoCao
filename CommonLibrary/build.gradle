@@ -1,0 +1,93 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 14
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+//    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+    testCompile 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    androidTestCompile 'com.android.support.test:runner:1.0.2'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //沉寻式的引用
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.42'
+    //统计表框架MPAndroidChart的引用
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    //圆形图片
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    //下拉刷新与上拉加载更多
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    //权限申请
+    compile 'com.github.tbruyelle:rxpermissions:0.10.2'
+    //Retrofit
+    compile "com.squareup.okhttp3:okhttp:3.9.0"
+    compile "com.squareup.okhttp3:logging-interceptor:3.9.0"
+    compile "com.squareup.retrofit2:retrofit:2.3.0"
+    compile "com.squareup.retrofit2:converter-gson:2.3.0"
+    compile "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+
+    //Glide
+    compile 'com.github.bumptech.glide:glide:4.6.1'
+
+    compile "jp.wasabeef:glide-transformations:2.0.1"
+
+    //RxJava RxAndroid
+    compile 'io.reactivex.rxjava2:rxjava:2.2.2'
+    compile 'io.reactivex.rxjava2:rxandroid:2.1.0'
+
+    compile 'com.contrarywind:Android-PickerView:4.1.6'
+
+    compile "com.google.dagger:dagger:2.15"
+    //noinspection OutdatedLibrary
+    compile "com.google.dagger:dagger-android:2.15"
+    compile "com.google.dagger:dagger-android-support:2.15"
+
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'me.jessyan:autosize:1.0.6'
+
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+
+    //屏幕适配
+    implementation 'com.github.JessYanCoding:AndroidAutoSize:v1.2.1'
+
+    //Fragmentation
+    compile 'me.yokeyword:fragmentation:1.3.6'
+    //友盟统计
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:8.8.1'
+
+
+}

@@ -1,0 +1,29 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+=======
+=======
+>>>>>>> 3e979f23d92fa10a938b6335a4a5a339c77a7f13
+# Build and Release Folders
+bin/
+bin-debug/
+bin-release/
+
+# Other files and folders
+.settings/
+
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+<<<<<<< HEAD
+>>>>>>> 3e979f23d92fa10a938b6335a4a5a339c77a7f13
+=======
+>>>>>>> 3e979f23d92fa10a938b6335a4a5a339c77a7f13
